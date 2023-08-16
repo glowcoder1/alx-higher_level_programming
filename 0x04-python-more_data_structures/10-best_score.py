@@ -4,7 +4,7 @@ def best_score(a_dictionary):
     max = -9999
     if a_dictionary:
         for (key, value) in a_dictionary.items():
-            if value > max
-            max = value
-            res = key
+            if value > max:
+                max = value
+                res = key
     return res
