@@ -24,5 +24,5 @@ def roman_to_int(roman_string):
         else:
             res += curr
             if i == strLen - 1:
-            res += next
+                res += next
     return res
