@@ -2,10 +2,11 @@
 import sys
 
 
-def safe_print_integer_err(value):
+def safe_function(fct, *args):
     try:
-        print("{:d}".format(value))
+        res = fct(*args)
     except Exception as err:
         print("Exception: {}".format(err), file=sys.stderr)
-        return False
-    return True
+        return None
+     return res
+ 
