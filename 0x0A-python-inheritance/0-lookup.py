@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 
 """
-lookup module
+This modue provides the look up func
+
+Functions:
+lookup
+
 """
 
 
