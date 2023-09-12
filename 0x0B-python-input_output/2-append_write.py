@@ -5,9 +5,9 @@ function that appends a string to a text file
 """
 
 
-def append_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
-    append_file
+    append_write
     function that append a string to a text file
     Parameters: filename, text
     Returns: no of chars added
