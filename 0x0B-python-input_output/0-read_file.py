@@ -12,4 +12,4 @@ def read_file(filename=""):
     Returns: None, prints to stdout
     """
     with open(filename) as f:
-        print(f.read())
+        print(f.read(), end="")
