@@ -13,6 +13,6 @@ def write_file(filename="", text=""):
     Returns: no of chars written
     """
 
-   with open(filename, "w") as f:
-       charsWritten = f.write(text)
-       return charsWritten
+    with open(filename, "w") as f:
+        charsWritten = f.write(text)
+        return charsWritten
