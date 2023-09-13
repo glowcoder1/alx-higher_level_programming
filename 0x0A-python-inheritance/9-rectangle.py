@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-9-rectangle
-Module that creates a Rectangle class and inherits BaseGeometry.
+Rectangle
+Module that provides a Rectangle class and inherits BaseGeometry.
 """
+
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
