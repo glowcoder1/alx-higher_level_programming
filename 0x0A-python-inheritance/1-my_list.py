@@ -4,8 +4,9 @@
 print sorted
 """
 
-
-def print_sorted(self):
+class MyList(list):
+    """MyList class"""
+    def print_sorted(self):
     """
     prints sorted list
     Paramters: self
