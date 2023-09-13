@@ -15,4 +15,4 @@ class MyList(list):
         """
         temp = self.copy()
         temp.sort()
-        print(temp)
+        print("{}".format(temp))
