@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+
 """
-module that creates a Rectangle class.
+Module that creates a Rectangle class and inherits BaseGeometry.
 """
 
 
