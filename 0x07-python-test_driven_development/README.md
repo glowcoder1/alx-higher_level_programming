@@ -14,7 +14,7 @@ Write a function that adds 2 integers.
 
 **0-main.py**
 
-`
+```
 #!/usr/bin/python3
 add_integer = __import__('0-add_integer').add_integer
 
@@ -30,17 +30,18 @@ try:
     print(add_integer(None))
 except Exception as e:
     print(e)
-`
-** Expected Output **
+```
+**Expected Output**
 
-`
+```
 3
 98
 100
 98
 b must be an integer
 a must be an integer
-`
+```
+
 **Run tests**
  
 `python3 -m doctest -v ./tests/0-add_integer.txt | tail -2`
