@@ -2,6 +2,7 @@
 
 """
 module for say_my_name
+This module provides the say_my_name function
 """
 
 

@@ -2,6 +2,7 @@
 
 """
 Print square module
+This module provides the print_square function
 """
 
 

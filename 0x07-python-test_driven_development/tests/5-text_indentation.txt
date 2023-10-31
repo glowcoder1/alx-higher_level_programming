@@ -1,0 +1,46 @@
+Test module for 5-text_indentation
+==================================
+
+Usage:
+
+First import ``text_indentation`` from ``5-text_indentation``
+like this:
+
+::
+
+	>>> text_indentation =  __import__('5-text_indentation').text_indentation
+
+::
+
+	>>> text_indentation("what is your name?")
+	what is your name?
+	<BLANKLINE>
+
+::
+
+	>>> text_indentation(4)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+::
+
+	>>> text_indentation("Sam: do you know him?")
+	Sam:
+	<BLANKLINE>
+	do you know him?
+	<BLANKLINE>
+
+
+::
+	>>> text_indentation("testing the mic")
+	testing the mic
+
+::
+
+	>>> text_indentation("testing the mic.")
+	testing the mic.
+	<BLANKLINE>
+
+
+	
