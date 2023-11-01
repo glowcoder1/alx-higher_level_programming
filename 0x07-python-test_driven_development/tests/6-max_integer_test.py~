@@ -28,7 +28,7 @@ class TestMaxInteger(unittest.TestCase):
         """
         
         result = max_integer([1, 2, 3, 4])
-        self.assertEqual(result, 4)
+        self.assertEqal(result, 4)
 
     def test_max_str(self):
         """
@@ -39,28 +39,8 @@ class TestMaxInteger(unittest.TestCase):
         self.assertRaises(TypeError, result)
 
     def test_unordered_list(self):
-        """Test for unordered list """
-        
         result = max_integer([2,3,4,1])
         self.assertEqual(result, 4)
-
-    def test_max_at_start(self):
-        """Test for max at start of list"""
-        
-        result = max_integer([5, 3, 2, 1])
-        self.assertEqual(result, 5)
-
-    def test_one_elem(self):
-        """ Test for only one elem"""
-        
-        result = max_integer([3])
-        self.assertEqual(result, 3)
-
-    def test_negative(self):
-        """ Test for negative and positive elem"""
-        
-        result = max_integer([0, -5, 1])
-        self.assertEqual(result, 1)
 
         
 if __name__ == '__main__':

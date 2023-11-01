@@ -8,7 +8,7 @@ This module provides the matrix_divided function
 
 def matrix_divided(matrix, div):
     """
-    matric_divided divides all elements of a matrix.
+    matrix_divided divides all elements of a matrix.
     Returns a new matrix
     """
     if not (isinstance(div, int) or isinstance(div, float)):
@@ -28,15 +28,13 @@ def matrix_divided(matrix, div):
                     if (isinstance(value, int) or isinstance(value, float)):
                         new_row.append(round(value/div, 2))
                     else:
-                        raise TypeError(
-                            "matrix must be a matrix (list of lists) of 
-integers/floats")
-            new_matrix.append(new_row)
+                        raise TypeError("matrix must be a matrix (list of "
+                                        "lists) of integers/floats")
+                new_matrix.append(new_row)
             else:
-                raise TypeError("matrix must be a matrix
-                                (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix "
+                                "(list of lists) of integers/floats")
         return new_matrix
     else:
-        raise TypeError(
-            "matrix must be a matrix (list of lists) of integers/floats"
-        )
+        raise TypeError("matrix must be a matrix (list of lists) of "
+                        "integers/floats")

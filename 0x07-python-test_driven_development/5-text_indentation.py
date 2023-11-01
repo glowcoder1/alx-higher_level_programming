@@ -24,6 +24,8 @@ def text_indentation(text):
             skip = True
         elif skip:
             skip = False
-            continue
+            if char == " ":
+                continue
+            print(char, end="")
         else:
             print(char, end="")

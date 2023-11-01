@@ -1,0 +1,21 @@
+4-print_square test
+===================
+
+This covers test for the ``4-print_square`` module.
+
+Usage:
+
+First import ``print_square`` from ``4-print_square`` module
+like this:
+
+::
+
+	>>> print_square = __import__('4-print_square').print_square
+
+::
+
+	>>> print_square(4)  # doctest: +NORMALIZE_WHITESPACE
+	####
+	####
+	####
+	####
