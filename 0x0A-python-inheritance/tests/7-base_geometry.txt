@@ -16,11 +16,11 @@ Now test it:
 
     >>> bg.integer_validator("size", -7)
     Traceback (most recent call last):
-    ValueError: distance must be greater than 0
+    ValueError: size must be greater than 0
 
     >>> bg.integer_validator("height", 4.2)
     Traceback (most recent call last):
-    TypeError: average must be an integer
+    TypeError: height must be an integer
 
     >>> bg.integer_validator("name", "Doe")
     Traceback (most recent call last):
