@@ -13,11 +13,14 @@ class Student:
     """
 
     def __init__(self, first_name, last_name, age):
-        """creates student instance"""
+        """
+        creates student instance
+        Args: first_name, last_name, age
+        """
 
         self.first_name = first_name
         self.last_name = last_name
-        self.age = self.age
+        self.age = age
 
     def to_json(self):
         """ returns the dictionary rep of the instance"""
