@@ -17,4 +17,4 @@ def lookup(obj):
     Returns:
     list of attr and mtds
     """
-    return(dir(obj))
+    return (dir(obj))
