@@ -1,0 +1,67 @@
+#!/usr/bin/python3
+
+
+"""
+Unit test for Base class
+"""
+
+
+import unittest
+import os
+from models.base import Base
+
+
+class TestBase(unittest.TestCase):
+    """
+    Test cases for the base class
+    """
+
+    def test_id_is_none(self):
+        """
+        This test that when id is None
+        id is correctly assigned, this is the first object
+        so id should equal to 1
+        """
+
+        b1 = Base(None)
+        b2 = Base(None)
+        self.assertEqual(b1.id, b2.id - 1)
+
+    def test_id_is_given(self):
+        """
+        This tests that the supplied id is used
+        """
+
+        b1 = Base(14)
+        b2 = Base(17)
+        self.assertEqual(b1.id, b2.id - 3)
+
+    def test_nb_objects_is_incremented_correctly(self):
+        """
+        This test that nb objects is only incremented
+        when id is None
+        """
+
+        b1 = Base()
+        b2 = Base(20)
+        b3 = Base()
+        self.assertEqual(b1.id, b3.id - 1)
+
+    def test_no_args(self):
+
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(b1.id, b2.id - 1)
+
+    def test_id_is_public(self):
+        b = base(5)
+        b.id = 12
+        self.assertEqual(b.id, 12)
+
+    def test_nb_objects_is_private(self):
+        with self.assertRaises(AttributeError):
+            print(Base(4).__nb_objects)
+
+
+if __name__ == "__main__":
+    unittest.main()
