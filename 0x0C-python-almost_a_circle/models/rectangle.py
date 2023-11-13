@@ -100,3 +100,30 @@ class Rectangle(Base):
                                                        self.__x, self.__y,
                                                        self.__width,
                                                        self.__height)
+
+    def update(self, *args):
+        """assigns an argument to each attribute:.
+
+        *args: attribute to be updated.
+        - 1st argument reps id attribute
+        - 2nd argument reps width attribute
+        - 3rd argument rep height attribute
+        - 4th argument reps x attribute
+        - 5th argument reps y attribute
+        """
+
+        args_len = len(args)
+        if args and args_len != 0:
+            for i in range(args_len):
+                arg = args[i]
+                if i == 0:
+                    self.__init__(self.width, self.height, self.x, self.y,
+                                  arg)
+                elif i == 1:
+                    self.width = arg
+                elif i == 2:
+                    self.height = arg
+                elif i == 3:
+                    self.x = arg
+                elif i == 4:
+                    self.y = arg
