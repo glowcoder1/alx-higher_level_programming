@@ -84,12 +84,12 @@ class Rectangle(Base):
             return
         for i in range(self.__height):
             rect += "#" * self.__width
-            if i !=  self.__height - 1:
+            if i != self.__height - 1:
                 rect += "\n"
         print(rect)
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                      self.__x, self.__y,
-                                                      self.__width,
-                                                      self.__height)
+                                                       self.__x, self.__y,
+                                                       self.__width,
+                                                       self.__height)
