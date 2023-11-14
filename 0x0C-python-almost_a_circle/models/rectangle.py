@@ -88,7 +88,7 @@ class Rectangle(Base):
         if self.__width == 0 or self.__height == 0:
             print(rect)
             return
-        rect +="\n" * self.y
+        rect += "\n" * self.y
         for i in range(self.__height):
             rect += " " * self.x
             rect += "#" * self.__width
