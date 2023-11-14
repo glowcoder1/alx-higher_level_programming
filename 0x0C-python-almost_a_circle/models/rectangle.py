@@ -133,6 +133,7 @@ class Rectangle(Base):
         elif kwargs and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
-                    self.__init__(self.width, self.height, self.x, self.y)
+                    self.__init__(self.width, self.height, self.x, self.y,
+                                  v)
                 elif k in ["width", "height", "x", "y"]:
                     setattr(self, k, v)
