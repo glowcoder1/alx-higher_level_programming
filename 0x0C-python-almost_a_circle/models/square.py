@@ -47,7 +47,7 @@ class Square(Rectangle):
             for i in range(args_len):
                 arg = args[i]
                 if i == 0:
-                    self.__init__(self.width, self.height, self.x,
+                    self.__init__(self.size, self.x,
                                   self.y, arg)
                 elif i == 1:
                     self.size = arg
