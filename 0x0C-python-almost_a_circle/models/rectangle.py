@@ -137,3 +137,14 @@ class Rectangle(Base):
                                   v)
                 elif k in ["width", "height", "x", "y"]:
                     setattr(self, k, v)
+
+    def to_dictionary(self):
+        """Return the dictionary rep of Rectangle Instance."""
+
+        return {
+            "height": self.height,
+            "width": self.width,
+            "x": self.x,
+            "y": self.y,
+            "id": self.id,
+        }
