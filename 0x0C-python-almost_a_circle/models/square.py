@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-"""square class module."""
+"""square class module that inherits from Rectangle."""
 
 
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """square class."""
+    """square class that inherits from Rectangle Class."""
 
     def __init__(self, size, x=0, y=0, id=None):
 
