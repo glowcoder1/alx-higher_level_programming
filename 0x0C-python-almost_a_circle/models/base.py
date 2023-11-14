@@ -26,8 +26,8 @@ class Base:
         Accepts:
             list_dictionaries (list): list of dictionaries.
         """
-        if list_dictionaries is None or list_dictionaries == []:
-            return "[]"
+        if list_dictionaries is None or list_dictionaries == "[]":
+            return []
         return json.dumps(list_dictionaries)
 
     @classmethod
@@ -43,7 +43,7 @@ class Base:
             if list_objs is None:
                 jsonfile.write("[]")
             else:
-                dict_list = [o.to_dictionary() for o in list_objs]
+                dict_list = [d.to_dictionary() for d in list_objs]
                 jsonfile.write(Base.to_json_string(dict_list))
 
     @staticmethod
