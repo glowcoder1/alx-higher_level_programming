@@ -19,7 +19,6 @@ class Base:
         else:
             self.id = id
 
-
     @staticmethod
     def to_json_string(list_dictionaries):
         """Returns the JSON str rep of a list of dicts.
