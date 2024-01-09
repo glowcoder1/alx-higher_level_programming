@@ -8,7 +8,7 @@ if (isNaN(arg1)) {
   for (let i = 0; i < arg1; i++) {
     let sq = '';
     for (let j = 0; j < arg1; j++) {
-      sq = sq + '#';
+      sq = sq + 'X';
     }
     console.log(sq);
   }
